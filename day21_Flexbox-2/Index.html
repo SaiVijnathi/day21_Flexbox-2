@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="main-title">Flexbox Layout</h1>
+    </header>
+
+    <section class="content">
+        <h2>Stretch Property</h2>
+        <p>Items are stretched to fill the container.</p>
+        <div class="stretch">
+            <div class="letter">S</div>
+            <div class="letter">T</div>
+            <div class="letter">R</div>
+            <div class="letter">E</div>
+            <div class="letter">T</div>
+            <div class="letter">C</div>
+            <div class="letter">H</div>
+        </div>
+
+        <h2>Baseline Property</h2>
+        <p>Items align at the baseline of the container.</p>
+        <div class="baseline">
+            <div class="letter">B</div>
+            <div class="letter">A</div>
+            <div class="letter">S</div>
+            <div class="letter">E</div>
+            <div class="letter">L</div>
+            <div class="letter">I</div>
+            <div class="letter">N</div>
+            <div class="letter">E</div>
+        </div>
+        
+        <h2>Order Property</h2>
+        <div class="order">
+            <div class="letter" style="order: 3;">E</div>
+            <div class="letter" style="order: 2;">R</div>
+            <div class="letter" style="order: 1;">D</div>
+            <div class="letter">O</div>
+        </div>
+        
+        <h2>Align-self Property</h2>
+        <div class="align-self">
+            <div class="letter" style="align-self: flex-start;">A</div>
+            <div class="letter" style="align-self: center;">L</div>
+            <div class="letter" style="align-self: flex-end;">I</div>
+            <div class="letter">G</div>
+        </div>
+
+        <h2>Flex-grow Property</h2>
+        <p>Items grow relative to the other items inside the container.</p>
+        <div class="flex-grow">
+            <div class="letter" style="flex-grow: 2;">F</div>
+            <div class="letter">L</div>
+            <div class="letter">E</div>
+        </div>
+        
+        <h2>Flex-shrink Property</h2>
+        <p>Items shrink relative to other items when the container is smaller.</p>
+        <div class="flex-shrink">
+            <div class="letter" style="flex-shrink: 2;">F</div>
+            <div class="letter">L</div>
+            <div class="letter" style="flex-shrink: 3;">E</div>
+        </div>
+        
+        <h2>Flex-basis Property</h2>
+        <p>Specifies the initial size of a flex item.</p>
+        <div class="flex-basis">
+            <div class="letter">F</div>
+            <div class="letter" style="flex-basis: 200px;">L</div>
+            <div class="letter">E</div>
+        </div>
+    </section>
+</body>
+</html>
